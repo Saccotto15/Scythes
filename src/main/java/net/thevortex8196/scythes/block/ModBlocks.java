@@ -8,21 +8,22 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
-import net.thevortex8196.runestones.Runestones;
+import net.thevortex8196.scythes.Scythes;
+import net.thevortex8196.scythes.block.custom.ScytheTable;
 
 public class ModBlocks {
 
-    public static final Block RUNE_INFUSER = registerBlock("rune_infuser",
-            new RuneInfuser(AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).requiresTool().strength(0.8F)));
+    public static final Block SCYTHE_TABLE = registerBlock("scythe_table",
+            new ScytheTable(AbstractBlock.Settings.create().strength(2.5F).sounds(BlockSoundGroup.WOOD).burnable()));
 
     private static void registerBlockItem(String name, Block block) {
-        Registry.register(Registries.ITEM, Identifier.of(Runestones.MOD_ID, name),
+        Registry.register(Registries.ITEM, Identifier.of(Scythes.MOD_ID, name),
                 new BlockItem(block, new Item.Settings()));
     }
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
-        return Registry.register(Registries.BLOCK, Identifier.of(Runestones.MOD_ID, name), block);
+        return Registry.register(Registries.BLOCK, Identifier.of(Scythes.MOD_ID, name), block);
     }
 
     public static void  register() {

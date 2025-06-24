@@ -3,13 +3,13 @@
 	"id": "scythes",
 	"version": "${version}",
 	"name": "Scythes",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "",
 	"authors": [
-		"Me!"
+		"TheVortex8196",
+		"williamito"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/Saccotto15/Runestones"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/scythes/icon.png",
@@ -18,8 +18,14 @@
 		"main": [
 			"net.thevortex8196.scythes.Scythes"
 		],
+		"client": [
+			"net.thevortex8196.scythes.ScythesClient"
+		],
 		"fabric-datagen": [
 			"net.thevortex8196.scythes.ScythesDataGenerator"
+		],
+		"rei_client": [
+			"net.thevortex8196.scythes.compat.ScythesREIClient"
 		]
 	},
 	"mixins": [

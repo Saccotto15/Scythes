@@ -1,10 +1,14 @@
 {
-	"required": true,
-	"package": "net.thevortex8196.scythes.mixin",
-	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-	],
-	"injectors": {
-		"defaultRequire": 1
-	}
+  "required": true,
+  "package": "net.thevortex8196.scythes.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+    "ItemRendererMixin",
+    "ModelLoaderMixin"
+  ]
 }

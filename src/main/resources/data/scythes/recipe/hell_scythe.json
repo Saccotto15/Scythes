@@ -1,0 +1,17 @@
+{
+  "type": "scythes:scythe_table",
+  "needs_eye": true,
+  "connector": {
+    "item": "minecraft:gold_ingot"
+  },
+  "handle": {
+    "item": "scythes:netherite_rod"
+  },
+  "blade": {
+    "item": "minecraft:redstone_block"
+  },
+  "result": {
+    "count": 1,
+    "id": "scythes:hell_scythe"
+  }
+}

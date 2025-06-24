@@ -1,0 +1,17 @@
+{
+  "type": "scythes:scythe_table",
+  "needs_eye": true,
+  "connector": {
+    "tag": "minecraft:stone_crafting_materials"
+  },
+  "handle": {
+    "item": "minecraft:stick"
+  },
+  "blade": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "result": {
+    "count": 1,
+    "id": "scythes:netherite_scythe"
+  }
+}

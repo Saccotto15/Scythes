@@ -1,0 +1,16 @@
+{
+  "type": "scythes:scythe_table",
+  "connector": {
+    "tag": "minecraft:stone_crafting_materials"
+  },
+  "handle": {
+    "item": "minecraft:stick"
+  },
+  "blade": {
+    "tag": "minecraft:stone_crafting_materials"
+  },
+  "result": {
+    "count": 1,
+    "id": "scythes:stone_scythe"
+  }
+}

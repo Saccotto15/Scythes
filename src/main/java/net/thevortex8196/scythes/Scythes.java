@@ -2,6 +2,13 @@ package net.thevortex8196.scythes;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.thevortex8196.scythes.block.ModBlocks;
+import net.thevortex8196.scythes.block.entities.ModBlockEntities;
+import net.thevortex8196.scythes.datagen.ModLootTableModifier;
+import net.thevortex8196.scythes.item.ModCreativeTab;
+import net.thevortex8196.scythes.item.ModItems;
+import net.thevortex8196.scythes.recipe.ModRecipes;
+import net.thevortex8196.scythes.screen.ModScreenHandlers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,8 +22,20 @@ public class Scythes implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
+		LOGGER.info("Initialising Runestones by TheVortex8196.");
+
+		ModCreativeTab.register();
+
+		ModItems.register();
+		ModBlocks.register();
+
+		//ModDataComponents.register();
+
+		ModLootTableModifier.register();
+
+		ModBlockEntities.register();
+		ModScreenHandlers.register();
+
+		ModRecipes.register();
 	}
 }

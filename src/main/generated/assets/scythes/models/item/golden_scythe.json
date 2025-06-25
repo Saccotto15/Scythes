@@ -1,0 +1,6 @@
+{
+  "parent": "scythes:item/front_lit",
+  "textures": {
+    "layer0": "scythes:item/golden_scythe"
+  }
+}

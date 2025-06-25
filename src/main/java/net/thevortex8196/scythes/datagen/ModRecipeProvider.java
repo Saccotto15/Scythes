@@ -42,6 +42,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.NETHERITE_INGOT), conditionsFromItem(Items.NETHERITE_INGOT))
                 .offerTo(recipeExporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.EYE_OF_THE_END)
+                .pattern("+?+")
+                .pattern("?*?")
+                .pattern("+?+")
+                .input('?', Blocks.REDSTONE_BLOCK)
+                .input('*', Items.ENDER_EYE)
+                .input('+', Blocks.GOLD_BLOCK)
+                .criterion(hasItem(Items.NETHERITE_INGOT), conditionsFromItem(Items.NETHERITE_INGOT))
+                .offerTo(recipeExporter);
+
         StickRecipeBuilder(ModItems.CELESTIUM_INGOT, ModItems.CELESTIUM_ROD, recipeExporter);
         StickRecipeBuilder(Items.NETHERITE_INGOT, ModItems.NETHERITE_ROD, recipeExporter);
     }

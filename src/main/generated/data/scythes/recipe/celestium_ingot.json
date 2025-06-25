@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "*": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "?": {
+      "item": "minecraft:quartz"
+    }
+  },
+  "pattern": [
+    "???",
+    "?*?",
+    "???"
+  ],
+  "result": {
+    "count": 1,
+    "id": "scythes:celestium_ingot"
+  }
+}

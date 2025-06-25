@@ -1,0 +1,6 @@
+{
+  "parent": "scythes:item/scythe",
+  "textures": {
+    "layer0": "scythes:item/wooden_scythe_3d"
+  }
+}
